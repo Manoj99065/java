@@ -1,0 +1,42 @@
+class Student {
+    String name;
+    int age;
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+
+    }
+
+    void display() {
+        System.out.println("Name = " + this.name);
+        System.out.println("Age = " + this.age);
+    }
+
+    public Student() {
+        this("default name ", 18);
+    }
+
+    Student getStudent() {
+        return this;
+    }
+
+    void printdetails(Student s) {
+        System.out.println("Student object : " + s);
+
+    }
+
+    void show() {
+        printdetails(this);
+
+    }
+
+    public static void main(String args[]) {
+        Student s1 = new Student("Manoj", 20);
+        s1.display();
+
+        Student s2 = new Student();
+        s2.display();
+        s1.show();
+    }
+}

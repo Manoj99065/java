@@ -1,0 +1,15 @@
+class abc {
+   int sum(int a, int b) {
+      return a + b;
+
+   }
+}
+
+public class method {
+   public static void main(String args[]) {
+      int x = 10, y = 20;
+      abc a1 = new abc();
+      // a1.sum(x, y);
+      System.out.println("THe output is "+a1.sum(x, y));
+   }
+}

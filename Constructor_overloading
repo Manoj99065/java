@@ -1,0 +1,30 @@
+class operator_overloading {
+  public String emp_name;
+  public int emp_id;
+
+  operator_overloading() {
+    emp_name = "unkown";
+    emp_id = 0;
+
+  }
+
+  operator_overloading(String name, int id) {
+    emp_name = name;
+    emp_id = id;
+  }
+
+  void show() {
+    System.out.println("THe output is = " + emp_name);
+    System.out.println("THe output is = " + emp_id);
+
+  }
+}
+
+public class Operator_overloding {
+  public static void main(String args[]) {
+    operator_overloading h1 = new operator_overloading();
+    operator_overloading h2 = new operator_overloading("manoj", 24);
+    h1.show();
+    h2.show();
+  }
+}

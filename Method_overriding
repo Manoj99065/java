@@ -1,0 +1,22 @@
+class a {
+   void ram(int a, int b) {
+      int s = a + b;
+      System.out.println("Output from class a = " + s);
+   }
+}
+
+class b extends a {
+   // Method overriding: same method signature as in class a
+   @Override
+   void ram(int a, int b) {
+      int s = a + b;
+      System.out.println("Output from class b (overridden) = " + s);
+   }
+}
+
+public class Method_overriding {
+   public static void main(String[] args) {
+      b obj = new b();
+      obj.ram(29, 43); // Calls overridden method in class b
+   }
+}

@@ -1,0 +1,16 @@
+class create_array {
+   public static void main(String args[]) {
+      int[] arrays = new int[5];
+      arrays[0] = 100;
+      arrays[1] = 133;
+      arrays[2] = 532;
+      arrays[3] = 435;
+      arrays[4] = 343;
+      // arrays[5] = 600;
+
+      System.out.println("Arrays elements : ");
+      for (int i = 0; i < arrays.length; i++) {
+         System.out.println("Index " + i + ": " + arrays[i]);
+      }
+   }
+}
